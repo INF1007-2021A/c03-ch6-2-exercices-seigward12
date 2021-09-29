@@ -6,8 +6,11 @@ from matplotlib.colors import cnames
 
 def list_to_dict(some_list: list) -> dict:
     # TODO: Transformer la liste en dictionnaire, les éléments de la liste deviennent les clés et leur index deviennent les valeurs
-
-    return {}
+    liste_inverse={}
+    print (len(some_list))
+    for i in range(len(some_list)):
+        liste_inverse[some_list]=i
+    return liste_inverse
 
 
 def color_name_to_hex(colors: list) -> list:
@@ -18,8 +21,10 @@ def color_name_to_hex(colors: list) -> list:
 
 def create_list() -> list:
     # TODO: Créer une liste des 10 000 premiers entiers positif, sauf pour les entiers de 15 à 350
-
-    return []
+    b=[]
+    for a in range(10000):
+        b.append(a)
+    return b
 
 
 def compute_mse(model_dict: dict) -> dict:
